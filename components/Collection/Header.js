@@ -28,7 +28,7 @@ export default function Header(props) {
             onChange={(event) => onChange(event.target.value)}
           >
             <Option>Select</Option>
-
+            <Option>Top Rated</Option>
             <Option>Price Low - High</Option>
             <Option>Price High - Low</Option>
           </Select>
