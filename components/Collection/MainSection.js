@@ -29,7 +29,12 @@ export default function MainSection({ data, sort, setGroup, group }) {
     }
     if (sort === "Top Rated") {
       newArr = await newArr.sort((a, b) => {
-        return b.id - a.id;
+        return b.rating - a.rating;
+      });
+    }
+    if (sort === "Newest Arrival") {
+      newArr = await newArr.sort((a, b) => {
+        return b.rating - a.rating;
       });
     }
     if (sort === "Price Low - High") {
