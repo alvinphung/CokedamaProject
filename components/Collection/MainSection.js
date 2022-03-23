@@ -32,11 +32,6 @@ export default function MainSection({ data, sort, setGroup, group }) {
         return b.rating - a.rating;
       });
     }
-    if (sort === "Newest Arrival") {
-      newArr = await newArr.sort((a, b) => {
-        return b.rating - a.rating;
-      });
-    }
     if (sort === "Price Low - High") {
       newArr = await newArr.sort((a, b) => {
         return a.price - b.price;
